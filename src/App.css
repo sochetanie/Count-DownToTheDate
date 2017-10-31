@@ -1,15 +1,44 @@
+body {
+  background-image: url('https://cdn.spacetelescope.org/archives/images/screen/heic1313b.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat:no-repeat;
+  background-attachment:fixed;
+  color: white;
+}
+
 .App {
   text-align: center;
-  font-size: 35px;
+  font-size: 40px;
   margin-top: 20%;
-  font-weight: bold;
 }
 
 .title {
-  font-size: 45px;
+  color: black;
+  font-size: 60px;
+  background: linear-gradient(90deg,
+      #ff0000, #ffff00,
+      #00ff00, #00ffff,
+      #ff00ff, #ff0000);
 }
 
 .hours, .days, .minutes, .seconds{
   display: inline;
   margin: 1%;
+}
+
+input {
+  font-size: 28px;
+  margin: 0.5%;
+  background-color: black;
+  color: white;
+  outline: 0;
+  width: 50%;
+  font-style: italic
+}
+
+button {
+  color: white;
+  background-color: black;
+  outline: 0;
 }
