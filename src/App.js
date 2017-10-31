@@ -12,18 +12,30 @@ class App extends Component {
     }
   }
 
-  changeDeadline = (event) => {
+  changeDeadline = () => {
     this.setState({
       deadline: this.state.newDeadLine
     })
   }
+
+  getnewDeadLine = (event) => {
+    this.setState({
+      newDeadLine: event.target.value
+    })
+  }
+
+
   render() {
     return (
       <div className="App">
         <div className='title'>Countdown to {this.state.deadline}</div>
             <Clock deadline={this.state.deadline} />
           <div>
-            <input placeholder='new date' onChange={event => this.setState({newDeadLine: event.target.value})}/>
+            <input placeholder='new date' onChange={this.getnewDeadLine}/>
+
+            {/*or instead of getnewDeadLine function you can pass anonymos function to update state*/}
+            {/*<input placeholder='new date' onChange={event => this.setState({newDeadLine: event.target.value})}/>*/}
+
           </div>
           <button onClick={this.changeDeadline}>Submit</button>
       </div>
