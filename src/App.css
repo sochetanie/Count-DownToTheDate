@@ -1,0 +1,15 @@
+.App {
+  text-align: center;
+  font-size: 35px;
+  margin-top: 20%;
+  font-weight: bold;
+}
+
+.title {
+  font-size: 45px;
+}
+
+.hours, .days, .minutes, .seconds{
+  display: inline;
+  margin: 1%;
+}
